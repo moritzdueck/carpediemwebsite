@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1236px" height="382px" viewBox="0 0 1236 382" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(18.000000, 16.000000)">
+            <g id="LOGO-Copy-2" stroke="#39D2DC" stroke-width="36">
+                <g id="LOGO">
+                    <path d="M139.82159,204.3116 C104.450807,266.260279 5.22281341,276.595952 0.227189183,204.3116 C-4.76843504,132.027248 73.6440708,36.4432831 134.6357,0" id="Path"></path>
+                    <path d="M236.409213,299.948871 C201.03843,361.89755 101.810437,372.233223 96.8148124,299.948871 C91.8191881,227.664518 170.231694,132.080554 231.223324,95.6372706" id="Path-Copy" transform="translate(166.498418, 222.998959) scale(-1, -1) translate(-166.498418, -222.998959) "></path>
+                </g>
+            </g>
+            <text id="Carpe-Diem-Copy" font-family="Sen-Bold, Sen" font-size="165" font-weight="bold" fill="#202020">
+                <tspan x="294.392578" y="183">Carpe Diem</tspan>
+            </text>
+            <text id="We-are-Family-Copy" font-family="OpenSans-Regular, Open Sans" font-size="90" font-weight="normal" fill="#39D2DC">
+                <tspan x="294.022461" y="298">We are Family</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
