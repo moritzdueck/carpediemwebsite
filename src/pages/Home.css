@@ -1,0 +1,11 @@
+#home_content{
+    height: 1000px;
+}
+
+.cd_home_block{
+    padding: 30px;
+}
+
+.cd_home_block > h2{
+    font-family: 'Sen', sans-serif;
+}
