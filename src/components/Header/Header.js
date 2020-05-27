@@ -28,8 +28,8 @@ const Header = () => {
                 <span id='cd_header_l' />
                 <button id='cd_header_toggle' onClick={toggleMenu}>&#9776; Menu</button>
                 <div id='cd_header_links' className='hidden'>
-                    <a href='#cd_header'>Home</a>
-                    <a href='#cd_header'>Kurse</a>
+                    <a href='/'>Home</a>
+                    <a href='/kurse'>Kurse</a>
                     <a href='#cd_header'>Gesundheit</a>
                     <a href='#cd_header'>Training</a>
                     <a href='#cd_header'>Wellness</a>
