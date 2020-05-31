@@ -6,8 +6,8 @@ let CALENDAR_ID = "8b0aqe15nd48l2u9fh745fjfgc@group.calendar.google.com";
 export default class CalenderAPI {
 
     static async getCourses() {
-        let timeMin = getFirstDayOfThisWeek()
-        let timeMax = timeMin.clone().add(6, 'days')
+        let timeMin = getFirstDayOfThisWeek().startOf('day')
+        let timeMax = timeMin.clone().add(7, 'days')
 
         let response = await   fetch('https://www.googleapis.com/calendar/v3/calendars/' + CALENDAR_ID
         + "/events?key=" + API_KEY

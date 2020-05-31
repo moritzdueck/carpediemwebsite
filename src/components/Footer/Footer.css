@@ -1,6 +1,6 @@
 #cd_footer {
   width: 100%;
-  background-color: #3ad1db;
+  background-color: #202020;
   color: white;
 }
 
@@ -24,7 +24,7 @@
 
 .cd_footer_link {
   padding: 10px 20px;
-  color: #3ad1db;
+  color: #202020;
 }
 
 @media (min-width: 45em) {
