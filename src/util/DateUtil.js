@@ -1,10 +1,11 @@
 import moment from 'moment-timezone'
 
-export function getFirstDayOfThisWeek() {
-    return getFirstDayOfWeek(moment.tz('Europe/Berlin'))
+export default class DateUtil{
+    static getFirstDayOfThisWeek() {
+        return DateUtil.getFirstDayOfWeek(moment.tz('Europe/Berlin'))
+    }
+    
+    static getFirstDayOfWeek(day) {
+        return day.clone().isoWeekday(1)
+    }
 }
-
-export function getFirstDayOfWeek(day) {
-    return day.clone().isoWeekday(1)
-}
-

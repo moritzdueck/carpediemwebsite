@@ -8,11 +8,12 @@ const Kurse = () => {
     const [data, setData] = useState();
     const [error, setError] = useState();
     const [loading, setLoading] = useState(false);
+    const [weekOffset, setWeekOffset] = useState(0);
 
     useEffect(() => {
         setLoading(true);
 
-        CalenderAPI.getCourses()
+        CalenderAPI.getCourses(weekOffset)
             .then(data => parseCalenderResponse(data.items))
             .then(setData)
             .then(() => setLoading(false))
@@ -20,15 +21,22 @@ const Kurse = () => {
                 console.error(err);
                 setError(err)
             })
-    }, []);
+    }, [weekOffset]);
 
 
     return (
-        <div id='cd_courses_wrapper' style={{gridTemplateColumns: data?'1fr'.repeat(data.length):''}}>
+        <React.Fragment>
+         {data && <div id='cd_courses_week_selection'>
+            <button onClick={() => setWeekOffset(weekOffset -1)}>&lt;</button>
+            <p>Zeitraum ändern</p>
+            <button onClick={() => setWeekOffset(weekOffset + 1)}>&gt;</button>
+        </div>}
+
+        <div id='cd_courses_wrapper' style={{ gridTemplateColumns: data ? '1fr'.repeat(data.length) : '' }}>
             {loading && <p>Loading</p>}
             {error && <p>Error</p>}
 
-            {data && [...data].map(day =>
+            {!loading && data && [...data].map(day =>
                 <div className='cd_courses_dayCol' key={day[0]}>
                     <h3>{day[0]}</h3>
                     <div className='cd_courses_morning'>
@@ -51,6 +59,7 @@ const Kurse = () => {
                 </div>
             )}
         </div>
+        </React.Fragment>
     )
 }
 export default Kurse;
