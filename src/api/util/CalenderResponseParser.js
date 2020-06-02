@@ -15,6 +15,12 @@ let EVENING = 1
 
 export function parseCalenderResponse(response) {
     let items = new Map()
+    response.sort((a,b)=>{
+        if(moment.tz(a.start.dateTime,"Europe/Berlin").valueOf()<moment.tz(b.start.dateTime,"Europe/Berlin").valueOf()){
+            return -1;
+        }
+        return 1
+    })
     let days = new Set(response.map(item => 
         getDateKey(moment.tz(item.start.dateTime,"Europe/Berlin"))
     ))
@@ -44,7 +50,9 @@ function getDescription(item){
     return {
         'name':item.summary,
         'start':moment.tz(item.start.dateTime,"Europe/Berlin").format('HH:mm'),
-        'end':moment.tz(item.end.dateTime,"Europe/Berlin").format('HH:mm')
+        'end':moment.tz(item.end.dateTime,"Europe/Berlin").format('HH:mm'),
+        'description':item.description,
+        'id':item.id
     }
 }
 

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import CalenderAPI from '../../api/CalenderAPI';
 import { parseCalenderResponse } from '../../api/util/CalenderResponseParser';
 import './Kurse.css'
+import Kurs from '../../components/Kurs/Kurs';
 
 
 const Kurse = () => {
@@ -9,6 +10,7 @@ const Kurse = () => {
     const [error, setError] = useState();
     const [loading, setLoading] = useState(false);
     const [weekOffset, setWeekOffset] = useState(0);
+    const [activeID, setActiveID] = useState(0);
 
     useEffect(() => {
         setLoading(true);
@@ -41,19 +43,13 @@ const Kurse = () => {
                     <h3>{day[0]}</h3>
                     <div className='cd_courses_morning'>
                         {day[1][0].map(item =>
-                            <div className='cd_courses_course' key={item.start}>
-                                <p className='cd_course_name'>{item.name}</p>
-                                <p className='cd_course_time'>{item.start} - {item.end}</p>
-                            </div >
+                            <Kurs id={item.id} item={item} key={item.id} active={item.id === activeID} click={()=>setActiveID(item.id)}/>
                         )}
                     </div>
                     <div className='cd_courses_divider'/>
                     <div className='cd_courses_evening'>
                         {day[1][1].map(item =>
-                            <div className='cd_courses_course' key={item.start}>
-                                <p className='cd_course_name'>{item.name}</p>
-                                <p className='cd_course_time'>{item.start} - {item.end}</p>
-                            </div>
+                            <Kurs id={item.id} item={item} key={item.id} active={item.id === activeID} click={()=>setActiveID(item.id)}/>
                         )}
                     </div>
                 </div>

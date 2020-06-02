@@ -1,0 +1,26 @@
+.cd_courses_course {
+    background-color: #39d2dc;
+    color: #202020;
+    font-size: small;
+    padding: 10px;
+    margin: 4px 2px;
+    border-radius: 10px;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+  
+  .cd_courses_course:hover {
+    background-color: #4ae4ee;
+  }
+  
+ .cd_active_course{
+    padding: 10px;
+ }
+  
+  .cd_course_name {
+    margin-bottom: 0;
+    font-weight: bold;
+  }
+  .cd_course_time {
+    margin-top: 0;
+  }

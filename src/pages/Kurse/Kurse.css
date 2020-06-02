@@ -23,28 +23,6 @@
   flex-shrink: 1;
 }
 
-.cd_courses_course {
-  background-color: #39d2dc;
-  color: #202020;
-  font-size: small;
-  padding: 10px;
-  margin: 4px 2px;
-  border-radius: 10px;
-  flex-grow: 1;
-  flex-shrink: 1;
-}
-
-.cd_courses_course:hover {
-  background-color: #ffe953;
-}
-
-.cd_course_name {
-  margin-bottom: 0;
-  font-weight: bold;
-}
-.cd_course_time {
-  margin-top: 0;
-}
 
 #cd_courses_week_selection{
   display: flex;
