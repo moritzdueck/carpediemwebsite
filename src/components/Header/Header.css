@@ -7,6 +7,10 @@ header {
   width: 70%;
   max-width: 550px;
   padding: 30px 0px;
+}
+
+#cd_header_logo > img{
+  width: 100%;
   height: 100%;
 }
 

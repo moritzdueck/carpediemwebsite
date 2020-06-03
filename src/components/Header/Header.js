@@ -22,7 +22,7 @@ const Header = () => {
     return (
         <React.Fragment>
             <header id='cd_header'>
-                <img src={logo} alt='logo' id='cd_header_logo' />
+                <a href='/' id='cd_header_logo'><img src={logo} alt='logo'/></a>
             </header>
             <nav ref={ref}>
                 <span id='cd_header_l' />
