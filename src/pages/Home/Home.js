@@ -1,11 +1,13 @@
 import React from 'react';
 import './Home.css'
+import happy from '../../assets/happy.jpg'
+import group from '../../assets/group.jpg'
 
 const Home = () => {
     return (
         <div id='home_content'>
             <div className='cd_home_block'>
-                <img alt='happy person' src='https://i.pinimg.com/736x/fd/c4/b4/fdc4b4b326be698b67423d503bacc416.jpg'></img>
+                <img alt='happy person' src={happy}></img>
                 <div className='cd_home_text'>
                     <h2>Fühl dich wie Zuhause</h2>
                     <p>Wir sind alle unterschiedlich aber haben das selbe Ziel – Dich bestmöglich unterstützen.</p>
@@ -17,7 +19,7 @@ const Home = () => {
                     <h2>Lerne uns kennen</h2>
                     <p>Wir leben unsere Passion. Ernährung, Sport und Gesundheit sind nicht nur unser Fachgebiet, sondern auch unsere persönliche Überzeugung.</p>
                 </div>
-                <img alt='unser team' src='http://johnvalls.com/wp-content/uploads/2016/04/BWportraits.jpg'></img>
+                <img alt='unser team' src={group}></img>
             </div>
 
 
