@@ -30,6 +30,10 @@ nav {
   color: #222;
 }
 
+#cd_header_links > a.cd_selected_link{
+  color: #222;
+}
+
 #cd_header_toggle {
   outline: none;
   border: none;
