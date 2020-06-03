@@ -4,6 +4,10 @@
   color: white;
 }
 
+.cd_flat_link{
+  color: white;
+}
+
 #cd_footer > div {
   display: flex;
   flex-direction: column;
@@ -33,4 +37,9 @@
     justify-content: space-evenly;
     align-items: center;
   }
+}
+
+.cd_social_icon{
+  width: 40px;
+  padding: 10px
 }

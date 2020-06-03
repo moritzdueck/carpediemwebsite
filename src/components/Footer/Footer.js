@@ -1,6 +1,8 @@
 import React from 'react';
 import './Footer.css'
 import cd_white from '../../assets/cd_white.svg'
+import facebook from '../../assets/logo-facebook.svg'
+import whatsapp from '../../assets/logo-whatsapp.svg'
 
 const Footer = () => {
     return (
@@ -24,7 +26,8 @@ const Footer = () => {
                     </div>
                     <div>
                         <h4>Telefon</h4>
-                        <p>09575/982573</p>
+                        <a className='cd_flat_link' href="tel:09575982573">09575/982573</a>
+                        {/* <p>09575/982573</p> */}
                     </div>
                 </div>
                 <div>
@@ -33,12 +36,14 @@ const Footer = () => {
                 <div>
                     <div>
                         <h4>Adresse</h4>
-                        <p>Pater-Otto-Hopfenmüller Str. 1a <br />96260 Weismain</p>
-                        <h4>Download</h4>
-                        <div id='cd_footer_download'>
-                            KURSPLAN
-                        </div>
+                        <p>Pater-Otto-Hopfenmüller Str. 1a <br /> 96260 Weismain <br /> <a className='cd_flat_link' href='https://goo.gl/maps/nQMBPMdubwmLNHyz9'>Auf Google Maps anzeigen</a></p>
+                        <h4>E-Mail</h4>
+                        <p><a className='cd_flat_link' href="mailto:info@carpe-diem-weismain.de">info@carpe-diem-weismain.de</a></p>
+                    </div>
 
+                    <div id='cd_social'>
+                        <a href='https://de-de.facebook.com/carpediemweismain'><img alt='facebook' className='cd_social_icon' src={facebook} /></a>
+                        <a href='#cd_social'><img alt='whatsapp' className='cd_social_icon' src={whatsapp} /></a>
                     </div>
                 </div>
             </div>
