@@ -3,14 +3,7 @@
   margin: auto;
   padding: 0px 30px;
   padding-bottom: 200px;
-}
-
-@media (min-width: 45em) {
-  #cd_courses_wrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-    justify-content: center;
-  }
+  position: relative;
 }
 
 .cd_courses_wrapper_evening {
@@ -23,15 +16,14 @@
   flex-shrink: 1;
 }
 
-
-#cd_courses_week_selection{
+#cd_courses_week_selection {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 10px 0px;
 }
 
-#cd_courses_week_selection > button{
+#cd_courses_week_selection > button {
   background-color: #202020;
   color: white;
   font-weight: bold;
@@ -41,15 +33,30 @@
   border: 0;
 }
 
-#cd_courses_week_selection > p{
-  font-weight:  bold;
+#cd_courses_week_selection > p {
+  font-weight: bold;
 }
 
 @media (max-width: 45em) {
-  #cd_courses_week_selection{
-    position: fixed;
+  #cd_courses_week_selection {
+    position: sticky;
+    top: 40px;
     bottom: 0;
     background-color: white;
+    width: 100%;
+  }
+}
+
+
+@media (min-width: 45em) {
+  #cd_courses_wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    justify-content: center;
+    padding-top: 100px;
+  }
+  #cd_courses_week_selection {
+    position: absolute;
     width: 100%;
   }
 }
