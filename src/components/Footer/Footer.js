@@ -43,7 +43,7 @@ const Footer = () => {
 
                     <div id='cd_social'>
                         <a href='https://de-de.facebook.com/carpediemweismain'><img alt='facebook' className='cd_social_icon' src={facebook} /></a>
-                        <a href='#cd_social'><img alt='whatsapp' className='cd_social_icon' src={whatsapp} /></a>
+                        <a href='https://wa.me/+499575982573'><img alt='whatsapp' className='cd_social_icon' src={whatsapp} /></a>
                     </div>
                 </div>
             </div>
