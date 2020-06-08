@@ -9,6 +9,8 @@ import Training from './pages/Training/Training';
 import Gesundheit from './pages/Gesundheit/Gesundheit';
 import RehaSport from './pages/RehaSport/RehaSport';
 import Wellness from './pages/Wellness/Wellness';
+import Impressum from './pages/Impressum/Impressum';
+import Datenschutz from './pages/Datenschutz/Datenschutz';
 
 const App = () => (
     <Router>
@@ -19,6 +21,8 @@ const App = () => (
       <Route exact path="/gesundheit" component={Gesundheit} />
       <Route exact path="/rehasport" component={RehaSport} />
       <Route exact path="/wellness" component={Wellness} />
+      <Route exact path="/impressum" component={Impressum} />
+      <Route exact path="/datenschutz" component={Datenschutz} />
       <Footer/>
     </Router>
 )
