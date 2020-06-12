@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
-import { Router, Route } from 'react-router-dom'
-import { createBrowserHistory } from 'history';
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Header from './components/Header/Header';
 import Home from './pages/Home/Home';
 import Footer from './components/Footer/Footer';
@@ -13,14 +12,8 @@ import Wellness from './pages/Wellness/Wellness';
 import Impressum from './pages/Impressum/Impressum';
 import Datenschutz from './pages/Datenschutz/Datenschutz';
 
-var history = createBrowserHistory();
-history.listen((location) => {
-  window.ga && window.ga('set', 'page', location.pathname + location.search);
-  window.ga && window.ga('send', 'pageview');
-});
-
 const App = () => (
-    <Router history={history}>
+    <Router>
       <Header/>
       <Route exact path="/" component={Home} />
       <Route exact path="/kurse" component={Kurse} />

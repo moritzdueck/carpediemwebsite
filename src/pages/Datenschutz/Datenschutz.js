@@ -72,7 +72,7 @@ const Datenschutz = () => {
         Angebotes eingeschränkt werden.
       </p>
       <br />
-      <p>
+      {/* <p>
         <strong>Google-Analytics</strong>
       </p>
       <p>
@@ -112,7 +112,7 @@ const Datenschutz = () => {
         </a>
       </p>
       <br />
-      <br />
+      <br /> */}
       <p>
         <strong>Auskunft</strong>
       </p>
