@@ -14,9 +14,9 @@ import Impressum from './pages/Impressum/Impressum';
 import Datenschutz from './pages/Datenschutz/Datenschutz';
 
 var history = createBrowserHistory();
-window.ga && history.listen((location) => {
-  window.ga('set', 'page', location.pathname + location.search);
-  window.ga('send', 'pageview');
+history.listen((location) => {
+  window.ga && window.ga('set', 'page', location.pathname + location.search);
+  window.ga && window.ga('send', 'pageview');
 });
 
 const App = () => (

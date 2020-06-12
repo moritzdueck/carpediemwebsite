@@ -48,7 +48,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
+            <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap'}}>
                 <a href='/impressum' className='cd_footer_link'>Impressum</a>
                 <a href='/datenschutz' className='cd_footer_link'>Datenschutz</a>
                 <a href='#cd_header' className='cd_footer_link' id='cd_cookie_button'> Cookie-Einstellungen</a>
