@@ -4,10 +4,14 @@ import bauers from '../../assets/home/img 17.jpeg'
 import claudiaSanne from '../../assets/home/img 1.jpeg'
 import sanne from '../../assets/home/img 14.jpeg'
 import beratung from '../../assets/home/img 8.jpeg'
+import News from '../../pages/News/News';
 
 const Home = () => {
     return (
         <div className='content'>
+            <News/>
+            <div className='cd_content_divider' />
+            
             <div className='cd_home_block'>
                 <div className='cd_home_text'>
                     <h2>Fühl' Dich wie Zuhause</h2>
