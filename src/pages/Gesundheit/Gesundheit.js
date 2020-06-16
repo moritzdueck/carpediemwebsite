@@ -1,7 +1,7 @@
 import React from 'react';
 import './Gesundheit.css'
 import back from '../../assets/stock/back.jpg'
-import claudia from '../../assets/gesundheit/img 13.jpeg'
+import claudia from '../../assets/gesundheit/stairs.jpg'
 import pair from '../../assets/gesundheit/img 6.jpeg'
 import moritz from '../../assets/gesundheit/img 32.jpeg'
 
