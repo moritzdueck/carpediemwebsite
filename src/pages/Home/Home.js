@@ -4,6 +4,7 @@ import bauers from '../../assets/home/img 17.jpeg'
 import claudiaSanne from '../../assets/home/img 1.jpeg'
 import sanne from '../../assets/home/img 14.jpeg'
 import beratung from '../../assets/home/img 8.jpeg'
+import News from '../News/News';
 
 const Home = () => {
     return (
@@ -18,6 +19,10 @@ const Home = () => {
 
             <div className='cd_content_divider' />
 
+            <News/>
+
+            <div className='cd_content_divider' />
+            
             <div className='cd_home_block img_left'>
                 <div className='cd_home_text'>
                     <h2>Das sind Wir</h2>

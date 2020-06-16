@@ -18,6 +18,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 1;
+  overflow: hidden;
 }
 
 #cd_header_links > a {
