@@ -16,6 +16,10 @@
   flex-shrink: 1;
 }
 
+.cd_courses_dayCol > h3{
+  font-family: Sen;
+}
+
 #cd_courses_week_selection {
   display: flex;
   justify-content: space-evenly;
