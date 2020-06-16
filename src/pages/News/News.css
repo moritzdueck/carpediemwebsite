@@ -1,0 +1,26 @@
+#cd_news_wrapper{
+    background-color: #efefef;
+    padding: 30px;
+    position: relative;
+    box-shadow: inset 0px 1px 9px 1px #dadada;
+}
+
+#cd_news_wrapper > div{
+    max-width: 1080px;
+    margin: auto;
+    position: relative;
+}
+
+#cd_news_heading{
+    font-family: Sen;
+}
+
+#news_button{
+    color: black;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    position: absolute;
+    right: 10px;
+    font-size: x-large;
+    font-weight: bold;
+}
