@@ -12,9 +12,11 @@ import Wellness from './pages/Wellness/Wellness';
 import Impressum from './pages/Impressum/Impressum';
 import Datenschutz from './pages/Datenschutz/Datenschutz';
 import News from './pages/News/News';
+import { ScrollToTopController } from './util/ScrollToTopController';
 
 const App = () => (
     <Router>
+      <ScrollToTopController/>
       <Header/>
       <News/>
       <Route exact path="/" component={Home} />
