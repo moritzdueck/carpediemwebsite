@@ -1,6 +1,6 @@
 import React from 'react';
 import './Wellness.css'
-import sauna from '../../assets/wellness/img 39.jpg'
+import sauna from '../../assets/wellness/img 42.jpg'
 import dusche from '../../assets/wellness/img 40.jpg'
 
 
