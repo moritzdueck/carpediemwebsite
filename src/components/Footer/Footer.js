@@ -32,6 +32,7 @@ const Footer = () => {
                 </div>
                 <div>
                     <img src={cd_white} alt='logo'></img>
+                    <h2>Carpe Diem Weismain</h2>
                 </div>
                 <div>
                     <div>
