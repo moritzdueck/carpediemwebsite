@@ -24,7 +24,7 @@ const News = () => {
 
     return (
         <React.Fragment>
-            {showing && data && data.items[0] && data.items[0].description && <div id="cd_news_wrapper">
+            {showing && data && data.items && data.items[0] && data.items[0].description && <div id="cd_news_wrapper">
                 <div>
                     <button id='news_button' onClick={() => { setShowing(false); sessionStorage.setItem('hideBanner', true); }}>X</button>
                     <h2 id='cd_news_heading'> Aktuelles: </h2>
