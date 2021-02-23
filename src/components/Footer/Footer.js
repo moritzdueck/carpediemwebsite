@@ -30,7 +30,7 @@ const Footer = () => {
                         {/* <p>09575/982573</p> */}
                     </div>
                 </div>
-                <div>
+                <div className="footer_logo_div">
                     <img src={cd_white} alt='logo'></img>
                     <h2>Carpe Diem Weismain</h2>
                 </div>
