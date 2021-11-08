@@ -13,15 +13,11 @@ const Footer = () => {
                         <h4>Unsere Öffnungszeiten</h4>
                         <div className='cd_footer_flex'>
                             <div>Mo - Fr</div>
-                            <div>8:15 - 13:00, 16:00 - 21:30 Uhr</div>
-                        </div>
-                        <div className='cd_footer_flex'>
-                            <div>Sa</div>
-                            <div>15:00 - 18:00 Uhr</div>
+                            <div>7:00 - 21:30 Uhr</div>
                         </div>
                         <div className='cd_footer_flex'>
                             <div>So</div>
-                            <div>9:00 - 12:00 Uhr</div>
+                            <div>9:00 - 18:00 Uhr</div>
                         </div>
                     </div>
                     <div>
