@@ -16,8 +16,8 @@ const Footer = () => {
                             <div>7:00 - 21:30 Uhr</div>
                         </div>
                         <div className='cd_footer_flex'>
-                            <div>So</div>
-                            <div>9:00 - 18:00 Uhr</div>
+                            <div>Sa, So & Feiertags</div>
+                            <div>9:00 - 21:30 Uhr</div>
                         </div>
                     </div>
                     <div>
